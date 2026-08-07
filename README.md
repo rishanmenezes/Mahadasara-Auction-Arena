@@ -9,11 +9,11 @@ The Mahadasara Auction Arena is a modern web application that facilitates sports
 ## ✨ Features
 
 ### Core Auction Functionality
-- **Live Auction System**: Real-time bidding with increment controls
+- **Auction System**: Bidding with increment controls (₹500 increments)
 - **Player Showcase**: Display current player up for auction with detailed information
 - **Team Dashboard**: View all participating teams with their purse status and player count
-- **Auction Controls**: Complete control over auction flow (Sell, Unsold, Next, Undo, Reset)
-- **Bid History**: Track all auction activities with timestamps and detailed logs
+- **Auction Controls**: Control auction flow (Sell, Unsold, Next, Undo, Reset)
+- **Bid History**: Track auction activities with timestamps and detailed logs
 
 ### Player Management
 - **Player Registration**: Add new players with images, positions, and base prices
@@ -31,10 +31,10 @@ The Mahadasara Auction Arena is a modern web application that facilitates sports
 
 ### User Interface
 - **Modern Design**: Dark-themed professional interface with auction-themed colors
-- **Responsive Layout**: Works seamlessly on desktop and mobile devices
-- **Real-time Updates**: Live updates of bids, auction status, and team purses
+- **Responsive Layout**: Adaptive layouts for different screen sizes
+- **State Updates**: Updates of bids, auction status, and team purses
 - **Filtering System**: Filter players by status, position, and availability
-- **Toast Notifications**: User-friendly notifications for all actions
+- **Toast Notifications**: User-friendly notifications for actions
 
 ## 🛠️ Technology Stack
 
@@ -59,7 +59,6 @@ The Mahadasara Auction Arena is a modern web application that facilitates sports
 
 ### Routing & Navigation
 - **React Router DOM 6.26.2**: Client-side routing
-- **Browser Router**: Hash-based routing for SPA navigation
 
 ### Utilities & Helpers
 - **date-fns 4.1.0**: Date formatting and manipulation
@@ -345,13 +344,13 @@ Team management interface with:
 2. Select a player from the Players List
 3. Click "Auction" button next to the player
 4. The player appears in the Player Showcase
-5. Teams can now place bids using the "Place Bid" buttons
+5. Teams can place bids using the "Place Bid" buttons
 
 ### Placing Bids
 1. Ensure auction is in progress
 2. Click "Place Bid" on the desired team card
 3. Bids increment by ₹500 automatically
-4. Current bid amount updates in real-time
+4. Current bid amount updates
 5. Bid history records each bid with timestamp
 
 ### Selling Players
@@ -395,36 +394,33 @@ Auction state is managed using a reducer pattern with the following actions:
 - `UNDO_LAST_ACTION`: Revert most recent action
 - `RESET_AUCTION`: Reset entire auction state
 
-## 🧪 Testing & Development
+## 🧪 Development Setup
 
-### Code Quality
+### Code Quality Tools
 - ESLint configuration for consistent code style
 - TypeScript for type safety
 - React Hook Form for form validation
 - Zod schemas for data validation
 
-### Development Features
+### Development Server Features
 - Hot Module Replacement (HMR) for fast development
 - Component tagger for development debugging
 - Source maps for easy debugging
-- Responsive design testing tools
 
 ## 📱 Responsive Design
 
-The application is fully responsive with:
-- Mobile-first approach
+The application uses Tailwind CSS responsive utilities with:
 - Adaptive layouts for different screen sizes
-- Touch-friendly interface elements
-- Optimized viewing for tablets and desktops
+- Mobile and desktop breakpoints
+- Grid and flexbox layouts for responsive behavior
 
 ## 🔐 Security Considerations
 
 - Client-side validation using Zod schemas
-- Input sanitization for user-provided data
-- Image upload restrictions to image files only
+- Image upload restricted to image files only
 - Protected actions (sold players cannot be deleted)
 
-## 🚀 Deployment
+## 🚀 Build & Deployment
 
 ### Build for Production
 ```bash
@@ -436,21 +432,7 @@ npm run build
 npm run preview
 ```
 
-### Deployment Platforms
-The application can be deployed to:
-- Vercel
-- Netlify
-- GitHub Pages
-- Any static hosting service
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these guidelines:
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+The application builds as a static site and can be deployed to any static hosting service.
 
 ## 📄 License
 
@@ -467,11 +449,9 @@ This project is part of Mahadasara College Sports and is intended for educationa
 - Radix UI for accessible component primitives
 - The React and TypeScript communities
 
-## 📞 Support
+## 📞 Contact
 
-For support, questions, or feedback:
-- GitHub Issues: [Project Issues](https://github.com/rishanmenezes/Mahadasara-Auction-Arena/issues)
-- Contact: Through GitHub repository
+For questions or feedback about this project, contact through the GitHub repository.
 
 ---
 
