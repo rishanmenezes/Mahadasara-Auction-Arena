@@ -1,10 +1,10 @@
 # Mahadasara Auction Arena
 
-A comprehensive sports auction platform built for Mahadasara College Sports, designed to manage player auctions, team bidding, and franchise management in an interactive and user-friendly interface.
+A sports auction platform built for Mahadasara College Sports, designed to manage player auctions, team bidding, and franchise management.
 
 ## 🏆 Overview
 
-The Mahadasara Auction Arena is a modern web application that facilitates sports player auctions for college teams. It provides a complete auction management system with real-time bidding, player showcase, team dashboard, and comprehensive administrative features for managing players and franchises.
+The Mahadasara Auction Arena is a web application that facilitates sports player auctions for college teams. It provides an auction management system with player showcase, team dashboard, and administrative features for managing players and franchises.
 
 ## ✨ Features
 
@@ -17,16 +17,16 @@ The Mahadasara Auction Arena is a modern web application that facilitates sports
 
 ### Player Management
 - **Player Registration**: Add new players with images, positions, and base prices
-- **Player Profiles**: Detailed player information including skills and statistics
+- **Player Profiles**: Player information including skills and statistics
 - **Position Categories**: Batsman, Bowler, All-Rounder, Wicket-Keeper, Captain
 - **Status Tracking**: Track player status (Available, Sold, Unsold)
-- **Image Upload**: Upload player photos with intuitive image uploader
+- **Image Upload**: Upload player photos
 
 ### Franchise Management
 - **Team Registration**: Add and manage participating franchises
 - **Purse Management**: Track team budgets and remaining funds
 - **Team Logos**: Upload team logos for visual identification
-- **Player Assignment**: Automatically assign sold players to respective teams
+- **Player Assignment**: Assign sold players to respective teams
 - **Financial Tracking**: Monitor spending and remaining budget for each team
 
 ### User Interface
@@ -54,7 +54,6 @@ The Mahadasara Auction Arena is a modern web application that facilitates sports
 - **React Context API**: Global state management for auction state
 - **React Hook Form 7.53.0**: Form handling with validation
 - **Zod 3.23.8**: Schema validation
-- **TanStack React Query 5.56.2**: Data fetching and caching
 - **UUID 11.1.0**: Unique identifier generation
 
 ### Routing & Navigation
@@ -143,8 +142,8 @@ mahadasara-auction-arena/
 │   │   └── TeamForm.tsx          # Team creation/editing form
 │   ├── context/                  # React Context providers
 │   │   └── AuctionContext.tsx    # Global auction state management
-│   ├── data/                     # Mock data and constants
-│   │   └── mockData.ts          # Sample players, teams, and history
+│   ├── data/                     # Mock data
+│   │   └── mockData.ts          # Sample players, teams, and auction history
 │   ├── hooks/                    # Custom React hooks
 │   │   ├── use-mobile.tsx       # Mobile device detection
 │   │   └── use-toast.ts         # Toast notification hook
@@ -224,11 +223,11 @@ mahadasara-auction-arena/
 
 ### Main Auction Page (`/`)
 The primary auction interface featuring:
-- **Player Showcase**: Large display of current player with image, name, position, and pricing
+- **Player Showcase**: Display of current player with image, name, position, and pricing
 - **Auction Controls**: Control buttons for Sell, Unsold, Next, Undo, and Reset
 - **Team Dashboard**: Grid of all franchise teams with purse information
-- **Players List**: Comprehensive list of all players with filtering options
-- **Auction History**: Real-time activity feed of all auction events
+- **Players List**: List of all players with filtering options
+- **Auction History**: Activity feed of auction events
 
 ### Manage Players (`/manage-players`)
 Player administration interface with:
